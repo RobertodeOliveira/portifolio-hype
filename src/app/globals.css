@@ -29,3 +29,14 @@ body {
     text-wrap: balance;
   }
 }
+
+.layout-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 16px;
+}
+
+.text-menu-header {
+  font-weight: 700;
+  font-size: 14px;
+} 
