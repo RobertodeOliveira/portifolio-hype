@@ -34,7 +34,7 @@ const listWorks: ListWorks[] = [
 
 export const SectionServices = () => {
   return ( 
-    <div className="w-full text my-16">
+    <section className="w-full text my-16">
       <SectionHeader title="My Service" />
       <div className="mt-12 grid-cols-* flex gap-6 w-full max-h-[350px]">
         {listWorks.map((item, index) => {
@@ -52,6 +52,6 @@ export const SectionServices = () => {
           )
         } )}
       </div>
-    </div>
+    </section>
   )
 }

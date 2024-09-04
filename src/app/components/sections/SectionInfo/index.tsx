@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export const SectionInfo = () => {
   return ( 
-    <div className="grid lg:grid-cols-[1fr_1fr] grid-cols-1 lg:grid-rows-1 grid-rows-2 gap-14">
+    <section className="grid lg:grid-cols-[1fr_1fr] grid-cols-1 lg:grid-rows-1 grid-rows-2 gap-14">
       <div className="relative ml-8 mt-8 bg-white rounded" >
       <Image
         src="/image/Image.svg"
@@ -32,8 +32,8 @@ export const SectionInfo = () => {
             <p>Completed <br /> projects </p>
           </div>
         </div>
-        <a href="" className="py-3 px-8 bg-purple mt-8 block w-fit rounded flex gap-3">SAY HI <img src="/arrow-right.svg" alt="" /></a>
+        <a href="" className="py-3 px-8 bg-purple mt-8 block w-fit rounded flex gap-3">SAY HI <img src="/icons/arrow-right.svg" alt="" /></a>
       </div>
-    </div>
+    </section>
   )
 }

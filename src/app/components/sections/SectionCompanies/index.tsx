@@ -3,7 +3,7 @@ import { CardCompany } from "../../CardCompany"
 
 export const SectionCompanies = () => { 
   return ( 
-    <div className="lg:flex text-3xl justify-between my-24">
+    <section className="lg:flex text-3xl justify-between my-24">
       <p className="max-w-72">I worked with <span className="text-pink">289+</span> Companies all over the World.</p>
       <div className="ml-4 h-fill flex gap-6 flex flex-wrap">
       <CardCompany>
@@ -22,6 +22,6 @@ export const SectionCompanies = () => {
         <Image src='/icons/arrow-right-purple.svg' width={40} height={24} alt="Logo youtube"/>
       </CardCompany>
       </div>
-    </div>
+    </section>
   )
 }
