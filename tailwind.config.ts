@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      lineHeight: {
+        'tight': '1.225'
+      },
       screens: {
         'xl': '1320px',
       },
@@ -15,8 +18,12 @@ const config: Config = {
         'purple': '#7D00FF',
         'pink': '#ED1CA6',
         'gray': '#A5A5A5',
+        'gray-100': '#DFE3EB',
+        'gray-500': '#A5A5A5',
+        'translucentPurple': '#684FFF1A',
       },
       backgroundImage: {
+        'banner-section': '/image/Shapes.svg',
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
