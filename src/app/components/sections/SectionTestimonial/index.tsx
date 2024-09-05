@@ -34,7 +34,10 @@ export const SectionTestimonial = () => {
       </div>
       <blockquote className="isolate col-start-4 col-span-full ml-4 bg-white h-full p-12 relative rounded text-black flex justify-between">
         <div>
-          <div>5.0 Start Rating</div>
+          <div className="flex gap-1 items-center">
+            <img src="/image/star.png" width={20} height={20} alt="" />
+            5.0 Start Rating
+            </div>
           <p className="text-2xl">"{testimonials[activeIndex]?.comment}</p>
         </div>
         <Image
