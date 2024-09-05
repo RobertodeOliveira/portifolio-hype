@@ -9,22 +9,7 @@ type ListWorks = {
 } 
 
 
-const listWorks: ListWorks[] = [
-  {
-    icon: '/icons/layers.svg',
-    text: <p>UI/UX <br /> Design</p>,
-    alt: "Icon layers"
-  },
-  {
-    icon: '/icons/Box.svg',
-    text: <p>Product <br /> Design</p>,
-    alt: 'Icon Box'
-  },
-  {
-    icon: '/icons/columns.svg',
-    text: <p>Branding <br /> Design</p>,
-    alt: 'Icon Columns',
-  },
+const listWorks: ListWorks[] = [  
   {
     icon: '/icons/code.svg',
     text: <p>Front End Development</p>,
@@ -34,12 +19,12 @@ const listWorks: ListWorks[] = [
 
 export const SectionServices = () => {
   return ( 
-    <section className="w-full text my-16">
+    <section id="section-services" className="w-full text my-16">
       <SectionHeader title="My Service" />
-      <div className="mt-12 grid-cols-* flex gap-6 w-full max-h-[350px]">
+      <div className="mt-12 flex items-center justify-center gap-6 w-full  max-h-[350px]">
         {listWorks.map((item, index) => {
           return ( 
-                <div key={index} className="bg-white h-80 w-full p-8 rounded-md">
+                <div key={index} className="bg-white h-80 w-full max-w-[312px] p-8 rounded-md">
                   <div>
                     <Image src={item.icon} width={40} height={40} alt={item.alt} className="hover:text-pink"/>
                   </div>
