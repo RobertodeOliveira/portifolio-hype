@@ -7,12 +7,12 @@ export const work = [
     {
       name: "DTMoney",
       href: "https://github.com/RobertodeOliveira/DT-Money",
-      image: "/image/edguard.svg",
+      image: "/image/educare.svg",
     },
     {
       name: "TodoList",
       href: "https://github.com/RobertodeOliveira/projeto-To-Do-List",
-      image: "/image/edguard.svg",
+      image: "/image/learning.svg",
     },
   ];
   
