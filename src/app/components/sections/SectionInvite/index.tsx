@@ -1,4 +1,4 @@
-import { Button } from "../../ui/Button";
+import { Anchor } from "../../ui/Anchor";
 import ArrowLeftIcon from "@/assets/icons/arrow-right.svg";
 
 export const SectionInvite = () => {
@@ -8,12 +8,13 @@ export const SectionInvite = () => {
         Got a Project in Mind? Let's Make Something Awesome{" "}
         <span className="text-pink">Together</span>.
       </h3>
-      <Button
+      <Anchor
+        href=""
         variant="primary"
         className="row-start-2 col-span-full justify-self-center"
       >
         Hire me <ArrowLeftIcon />
-      </Button>
+      </Anchor>
     </section>
   );
 };

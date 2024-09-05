@@ -2,7 +2,7 @@
 
 import { Formik, Form, FormikHelpers, Field } from "formik";
 import { useState } from "react";
-import { Button } from "../../ui/Button";
+import { Anchor } from "../../ui/Anchor";
 import { ContactFormValues, formContactValidation } from "./validation";
 import { ApiResponseContact } from "../../../../../api/types";
 import { API_URL } from "../../../../../api/api";
@@ -73,7 +73,7 @@ export const SectionContactForMe = () => {
           submitForm(values, () => resetForm({}));
         }}
       >
-        {({ values, errors }) => {
+        {({ errors }) => {
           return (
             <Form className="p-12  bg-white col-span-full  lg:col-span-7 rounded-lg text-neutral-600">
               <h3 className="text-black text-3xl font-medium mb-6">
@@ -123,9 +123,9 @@ export const SectionContactForMe = () => {
                 <p className="text-red-600">{errors.message}</p>
               )}
               <div className="mt-8">
-                <Button type="submit" variant="primary">
+                <Anchor type="submit" variant="primary">
                   SEND MESSAGE <img src="/icons/send.svg" alt="" />
-                </Button>
+                </Anchor>
               </div>
               {responseForm && responseForm.message && (
                 <p

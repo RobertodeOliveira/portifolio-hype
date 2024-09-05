@@ -2,7 +2,7 @@ import { links } from "./data";
 
 export const Header = () => {
   return (
-    <header className="flex col-span-full justify-end gap-8 items-center">
+    <header id="header" className="flex col-span-full justify-end gap-8 items-center">
       <ul className="contents">
         {links.map((link) => (
           <li key={link.name}>

@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { SocialMedias } from "../../SocialMedias";
-import { Button } from "../../ui/Button";
+import { Anchor } from "../../ui/Anchor";
 
 export const SectionPresentation = () => {
   return (
-    <section className="lg:grid-rows-4">
+    <section id="section-about" className="lg:grid-rows-4">
       <div className="col-start-1 col-span-8 row-start-2 row-span-2">
         <h1 className="text-6xl lg:text-[80px] leading-tight">
           Hello, I’m Roberto, a{" "}
@@ -19,8 +19,8 @@ export const SectionPresentation = () => {
           my skills to deliver the best in every project.
         </p>
         <div className="max-w-80 mt-8 flex gap-4">
-          <Button variant="primary">Hire me</Button>
-          <Button variant="secondary">View</Button>
+          <Anchor href="/#section-contact" variant="primary">Hire me</Anchor>
+          <Anchor href="/#section-works" variant="secondary">View</Anchor>
         </div>
       </div>
       <div className="row-start-4 content-center">

@@ -1,9 +1,9 @@
 import Image from "next/image";
-import { Button } from "../../ui/Button";
+import { Anchor } from "../../ui/Anchor";
 
 export const SectionInfo = () => {
   return (
-    <section id="section-about">
+    <section>
       <div className="col-span-full lg:col-span-5 relative h-80 lg:h-full">
         <Image
           src="/image/Image.svg"
