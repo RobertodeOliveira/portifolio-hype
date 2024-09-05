@@ -37,10 +37,10 @@ export const SectionInfo = () => {
             </p>
           </div>
         </div>
-        <Button variant="primary">
-          SAY HI{" "}
+        <a href="/#section-contact" className="flex max-w-fit gap-2 hover:cursor-pointer h-14 px-8 rounded font-semibold items-center uppercase bg-purple">
+          SAY HI
           <Image src="/icons/arrow-right.svg" alt="" width={30} height={30} />
-        </Button>
+        </a>
       </div>
     </section>
   );
