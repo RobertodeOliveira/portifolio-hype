@@ -3,7 +3,7 @@ import { Button } from "../../ui/Button";
 
 export const SectionInfo = () => {
   return (
-    <section>
+    <section id="section-about">
       <div className="col-span-full lg:col-span-5 relative h-80 lg:h-full">
         <Image
           src="/image/Image.svg"

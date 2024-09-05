@@ -10,7 +10,7 @@ export const SectionCompanies = () => {
 
       <a className="col-start-5 col-span-full bg-white py-10 rounded-lg flex justify-center hover:cursor-pointer">
         <Image
-          src="/image/youtube.svg"
+          src="/image/allianca.svg"
           width={115}
           height={24}
           alt="Logo youtube"

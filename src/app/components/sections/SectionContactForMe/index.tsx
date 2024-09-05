@@ -55,7 +55,7 @@ export const SectionContactForMe = () => {
   };
 
   return (
-    <section>
+    <section id="section-contact">
       <Formik
         initialValues={{
           name: "",

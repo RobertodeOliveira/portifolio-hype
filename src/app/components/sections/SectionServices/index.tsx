@@ -4,7 +4,7 @@ import { listWorks } from "./data";
 
 export const SectionServices = () => {
   return (
-    <section>
+    <section id="section-services">
       <SectionHeader title="My Service" />
       {listWorks.map((item, index) => (
         <div
