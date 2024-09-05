@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <head>
-        <link rel="icon" href="/faviicon.svg" />
+        <link rel="icon" href="/icons/faviicon.svg" />
       </head>
       <body
         className={`grid grid-cols-6 gap-x-4 md:grid-cols-8 lg:grid-cols-12 grid-rows-[6rem_auto_27rem] mx-auto w-[calc(min(1352px,94vw)-2rem)] overflow-x-hidden ${inter.className}`}
