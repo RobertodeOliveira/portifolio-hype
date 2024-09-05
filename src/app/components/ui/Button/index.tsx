@@ -1,17 +1,18 @@
 import { ReactNode } from "react"
+import clsx from "clsx"
 
 type Props = {
   children: ReactNode
-  color: string
-  padding: string
-}
+  variant: 'primary' | 'secondary'
+} & React.ButtonHTMLAttributes<HTMLButtonElement>
 
-export const Button = ({children, color, padding}: Props) => {
+
+export const Button = ({children, variant, ...props}: Props) => {
   return ( 
     <>
-      <div className={`text-[${color}] p-[${padding}]`}>
+      <button {...props} className={clsx('flex gap-2 hover:cursor-pointer py-5 px-8 rounded font-semibold w-fit' ,{'bg-purple': variant === 'primary', 'bg-white text-black': variant === 'secondary'})}>
         {children}
-      </div>
+      </button>
     </>
   )
 }
