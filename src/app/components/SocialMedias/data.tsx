@@ -6,16 +6,16 @@ export const socialLinks = [
   {
     label: "Go to my facebook account",
     icon: <FacebookIcon />,
-    href: "#",
+    href: "https://www.facebook.com/?react=AQBMK7n-fb1RwLWt6W8",
   },
   {
     label: "Go to my facebook account",
     icon: <InstagramIcon />,
-    href: "#",
+    href: "https://www.instagram.com/robertomello22/",
   },
   {
     label: "Go to my facebook account",
     icon: <GithubIcon />,
-    href: "#",
+    href: "https://github.com/RobertodeOliveira",
   },
 ];
