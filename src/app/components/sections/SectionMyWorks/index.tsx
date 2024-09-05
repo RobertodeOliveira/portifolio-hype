@@ -3,7 +3,7 @@ import { SectionHeader } from "../SectionHeader"
 
 export const SectionMyWorks = () => {
   return ( 
-    <section className="w-full my-16">
+    <section id="section-works" className="w-full my-16">
       <SectionHeader title="My Selected Work" />
       <div className="mt-12 gap-6 w-full grid lg:grid-cols-3 grid-rows-2 sm:grid-cols-2 ">
         <CardWork image="/image/edguard.svg" text="E-learning Website" />

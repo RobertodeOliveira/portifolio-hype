@@ -23,7 +23,7 @@ const config: Config = {
         'translucentPurple': '#684FFF1A',
       },
       backgroundImage: {
-        'banner-section': '/image/Shapes.svg',
+        'banner-section': "url('/image/shapes.svg')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",

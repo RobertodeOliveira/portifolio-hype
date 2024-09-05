@@ -5,7 +5,7 @@ export const SectionCompanies = () => {
   return ( 
     <section className="lg:flex text-3xl justify-between my-24">
       <p className="max-w-72">I worked with <span className="text-pink">289+</span> Companies all over the World.</p>
-      <div className="ml-4 h-fill flex gap-6 flex flex-wrap">
+      <div className="ml-4 h-fill flex gap-6 flex-wrap">
       <CardCompany>
         <Image src='/image/youtube.svg' width={115} height={24} alt="Logo youtube"/>
       </CardCompany>

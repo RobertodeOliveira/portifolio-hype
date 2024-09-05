@@ -6,13 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "api": "npx json-server api/db.json --port 4000"
   },
   "dependencies": {
+    "clsx": "^2.1.1",
+    "formik": "^2.4.6",
+    "json-server": "^1.0.0-beta.2",
     "next": "14.2.7",
     "react": "^18",
     "react-dom": "^18",
-    "react-icons": "^5.3.0"
+    "react-icons": "^5.3.0",
+    "yup": "^1.4.0"
   },
   "devDependencies": {
     "@types/node": "^20",
