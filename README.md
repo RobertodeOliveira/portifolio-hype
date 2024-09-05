@@ -2,7 +2,7 @@
 # Landing Page - Portfólio em NextJs
 
 ## Sobre o projeto
-Este projeto é uma Landing Page para apresentar o portfólio de um desenvolvedor Frontend. A página destaca habilidades, projetos e informações de contato, com um design moderno e responsivo, proporcionando uma ótima experiência para os visitantes.
+Este projeto é uma Landing Page para apresentar o meu portfólio Frontend. A página destaca habilidades, projetos e informações de contato, com um design moderno e responsivo, proporcionando uma ótima experiência para os visitantes.
 
 <!-- GETTING STARTED -->
 
