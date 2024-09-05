@@ -1,14 +1,17 @@
-import { ButtonIcon } from "../ui/ButtonIcon"
+import { IconButton } from "../ui/IconButton";
+import { socialLinks } from "./data";
 
-export const SocialMedias = () => { 
-  return ( 
-    <div>
-      <p>Follow me on</p>
+export const SocialMedias = () => {
+  return (
+    <>
+      <p className="text-nowrap mb-3">Follow me on</p>
       <div className="flex gap-2">
-        <ButtonIcon href="##" icon="/icons/facebook.svg" />
-        <ButtonIcon href="##" icon="/icons/instagram.svg" />
-        <ButtonIcon href="##" icon="/icons/github.svg" />
+        {socialLinks.map(({ href, icon, label }) => (
+          <IconButton key={label} href={href}>
+            {icon}
+          </IconButton>
+        ))}
       </div>
-    </div>
-  )
-}
+    </>
+  );
+};

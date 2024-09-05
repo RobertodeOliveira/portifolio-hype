@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-size: 1rem;
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  @apply text-white bg-neutral-900;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,27 +30,12 @@
   }
 }
 
-body {
-  color: white;
-  background: #242424;
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-}
-
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
 
-.layout-grid {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  column-gap: 16px;
+section {
+  @apply grid col-span-full grid-cols-subgrid gap-y-4;
 }
-
-.text-menu-header {
-  font-weight: 700;
-  font-size: 14px;
-} 

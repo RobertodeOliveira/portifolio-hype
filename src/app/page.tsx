@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import { SectionInfo } from "./components/sections/SectionInfo";
 import { SectionServices } from "./components/sections/SectionServices";
@@ -11,7 +11,7 @@ import { SectionTestimonial } from "./components/sections/SectionTestimonial";
 
 export default function Home() {
   return (
-    <main className="w-full items-center">
+    <main className="grid grid-cols-subgrid col-span-full gap-y-40 ">
       <SectionPresentation />
       <SectionInfo />
       <SectionServices />

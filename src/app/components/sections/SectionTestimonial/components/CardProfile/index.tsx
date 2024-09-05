@@ -1,12 +1,26 @@
-type CardProfileProps = {
-  name: string
-  description: string
-  company: string
-}
+import clsx from "clsx";
 
-export const CardProfile = ({name, description, company}: CardProfileProps) => {
-  return ( 
-    <div className="bg-white p-6 lg:max-w-80 rounded-md h-24 flex gap-4">
+type CardProfileProps = {
+  name: string;
+  description: string;
+  company: string;
+} & React.HTMLAttributes<HTMLDivElement>;
+
+export const CardProfile = ({
+  name,
+  description,
+  company,
+  className,
+  ...props
+}: CardProfileProps) => {
+  return (
+    <div
+      className={clsx(
+        "bg-white p-6 lg:max-w-80 rounded-md h-24 flex gap-4",
+        className
+      )}
+      {...props}
+    >
       <div className="rounded-full bg-gray-500 w-12 h-12"></div>
       <div>
         <h3 className="text-lg text-black">{name}</h3>
@@ -15,5 +29,5 @@ export const CardProfile = ({name, description, company}: CardProfileProps) => {
         </p>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,27 +1,21 @@
-import Image from "next/image"
-import { CardCompany } from "../../CardCompany"
+import Image from "next/image";
 
-export const SectionCompanies = () => { 
-  return ( 
-    <section className="lg:flex text-3xl justify-between my-24">
-      <p className="max-w-72">I worked with <span className="text-pink">289+</span> Companies all over the World.</p>
-      <div className="ml-4 h-fill flex gap-6 flex-wrap">
-      <CardCompany>
-        <Image src='/image/youtube.svg' width={115} height={24} alt="Logo youtube"/>
-      </CardCompany>
-      <CardCompany>
-        <Image src='/image/google.svg' width={115} height={24} alt="Logo youtube"/>
-      </CardCompany>
-      <CardCompany>
-        <Image src='/image/adobe.svg' width={115} height={24} alt="Logo youtube"/>
-      </CardCompany>
-      <CardCompany>
-        <Image src='/image/sketch.svg' width={115} height={24} alt="Logo youtube"/>
-      </CardCompany>
-      <CardCompany>
-        <Image src='/icons/arrow-right-purple.svg' width={40} height={24} alt="Logo youtube"/>
-      </CardCompany>
-      </div>
+export const SectionCompanies = () => {
+  return (
+    <section>
+      <h3 className="col-span-3 text-2xl self-center">
+        I have <span className="text-pink">2 years</span> of professional
+        experience
+      </h3>
+
+      <a className="col-start-5 col-span-full bg-white py-10 rounded-lg flex justify-center hover:cursor-pointer">
+        <Image
+          src="/image/youtube.svg"
+          width={115}
+          height={24}
+          alt="Logo youtube"
+        />
+      </a>
     </section>
-  )
-}
+  );
+};

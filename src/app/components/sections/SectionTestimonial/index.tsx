@@ -1,30 +1,50 @@
-import Image from "next/image"
-import { CardProfile } from "./components/CardProfile"
-import { SectionHeader } from "../SectionHeader"
-export const SectionTestimonial = () => {
+import Image from "next/image";
+import { CardProfile } from "./components/CardProfile";
+import { SectionHeader } from "../SectionHeader";
+import { ContactFormValues } from "../SectionContactForMe/validation";
+import { API_URL } from "../../../../../api/api";
+import { useEffect, useState } from "react";
+import clsx from "clsx";
+import { testimonials } from "./data";
 
-  return ( 
-    <section className="py-24 mb-24">
+export const SectionTestimonial = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const onSelectIndex = (index: number) => {
+    setActiveIndex(index);
+  };
+
+  return (
+    <section>
       <SectionHeader title="Testimonial" />
-      <div className="flex flex-col lg:flex-row mt-9 justify-between gap-11">
-        <div className="grid gap-2 md:grid-cols-2 grid-cols-1 lg:flex lg:flex-col lg:gap-1 lg:max-w-80 w-full">
-          <CardProfile name="Roberto" description="Front End Develop" company="Freelance"/>
-          <CardProfile name="Roberto" description="Front End Develop" company="Freelance"/>
-          <CardProfile name="Roberto" description="Front End Develop" company="Freelance"/>
-          <CardProfile name="Roberto" description="Front End Develop" company="Freelance"/>
-        </div>
-      <div className="w-full">
-        <div className="bg-white max-w-[960px] w-full h-72 p-12 rounded relative">
-          <div className="p-1 ml-[-62px] -mt-4 bg-white w-7 h-7 rounded-tl-md -rotate-45 absolute"></div>
-          <div className="text-black flex justify-between">
-            <div>
-              conteudo
-            </div>
-            <Image className="-mt-6" src="/image/Quote.svg" width={95} height={75} alt="quote image"/>
-          </div>
-          </div>
-        </div>
+      <div className="grid grid-cols-subgrid col-span-3 gap-y-4">
+        {testimonials.map(({ activity, company, name }, index) => (
+          <CardProfile
+            key={index}
+            onClick={() => onSelectIndex(index)}
+            description={`${activity} at`}
+            name={name}
+            company={company}
+            className={clsx("relative col-span-full", {
+              "lg:after:absolute lg:after:bg-white lg:after:size-6 after:rounded-sm lg:after:left-full lg:after:top-1/2 lg:after:-translate-y-1/2 lg:after:rotate-45 lg:after:translate-x-full":
+                activeIndex === index,
+            })}
+          />
+        ))}
       </div>
+      <blockquote className="isolate col-start-4 col-span-full ml-4 bg-white h-full p-12 relative rounded text-black flex justify-between">
+        <div>
+          <div>5.0 Start Rating</div>
+          <p className="text-2xl">"{testimonials[activeIndex]?.comment}</p>
+        </div>
+        <Image
+          className="-mt-6 absolute right-4 -z-10"
+          src="/image/Quote.svg"
+          width={95}
+          height={75}
+          alt="quote image"
+        />
+      </blockquote>
     </section>
-  )
-}
+  );
+};
