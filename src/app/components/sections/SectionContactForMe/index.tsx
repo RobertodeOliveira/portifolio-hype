@@ -123,9 +123,9 @@ export const SectionContactForMe = () => {
                 <p className="text-red-600">{errors.message}</p>
               )}
               <div className="mt-8">
-                <Anchor type="submit" variant="primary">
+                <button className="bg-purple text-white flex max-w-fit gap-2 hover:cursor-pointer h-14 px-8 rounded font-semibold items-center" type="submit">
                   SEND MESSAGE <img src="/icons/send.svg" alt="" />
-                </Anchor>
+                </button>
               </div>
               {responseForm && responseForm.message && (
                 <p
