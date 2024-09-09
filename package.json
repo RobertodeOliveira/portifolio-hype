@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "api": "npx json-server api/db.json --port 4000",
-    "test": "vitest"
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@testing-library/react": "^16.0.1",
@@ -32,6 +33,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "@vitejs/plugin-react": "^4.3.1",
+    "@vitest/coverage-istanbul": "^2.0.5",
+    "@vitest/coverage-v8": "^2.0.5",
+    "@vitest/ui": "^2.0.5",
     "eslint": "^8",
     "eslint-config-next": "14.2.7",
     "jest-environment-jsdom": "^29.7.0",

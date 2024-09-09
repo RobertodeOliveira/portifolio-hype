@@ -25,9 +25,7 @@ describe('SectionHeader',() => {
     const text = screen.getByText(CardWorkPropsValues.text);
     expect(text).toBeInTheDocument();
 
-    screen.debug()
     const image = await screen.findByTestId("card-image");
     expect(image).toHaveAttribute('src', CardWorkPropsValues.image);
-
   });
 });
