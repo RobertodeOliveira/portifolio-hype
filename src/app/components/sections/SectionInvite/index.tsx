@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Anchor } from "../../ui/Anchor";
 import ArrowLeftIcon from "@/assets/icons/arrow-right.svg";
 

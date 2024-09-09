@@ -11,7 +11,7 @@ export const Footer = () => {
           alt="Hypesoft Logo"
           />
       </a>
-      <small className="text-sm">
+      <small data-testId='text-footer' className="text-sm">
         Made with ♥ by Roberto and <span className="text-purple">Hypesoft</span>
       </small>
     </footer>
