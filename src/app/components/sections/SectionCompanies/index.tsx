@@ -3,7 +3,7 @@ import Image from "next/image";
 export const SectionCompanies = () => {
   return (
     <section>
-      <h3 className="col-span-3 text-2xl self-center">
+      <h3 data-testId='heading' className="col-span-3 text-2xl self-center">
         I have <span className="text-pink">2 years</span> of professional
         experience
       </h3>

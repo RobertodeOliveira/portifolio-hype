@@ -3,7 +3,7 @@ import { ReactNode } from "react";
 
 type Props = {
   children: ReactNode;
-  variant: "primary" | "secondary";
+  variant?: "primary" | "secondary";
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
 
 export const Anchor = ({ children, variant, className, ...props }: Props) => {

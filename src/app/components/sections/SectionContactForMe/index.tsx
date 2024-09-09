@@ -88,7 +88,7 @@ export const SectionContactForMe = () => {
                     className="w-[100%] border border-[#DFE3EB] py-3 px-5 rounded focus:border-sky-500"
                   />
                   {errors?.name && (
-                    <p className="text-red-600">{errors.name}</p>
+                    <p data-testId='message-error' className="text-red-600">{errors.name}</p>
                   )}
                 </div>
                 <div className="w-1/2">
@@ -99,7 +99,7 @@ export const SectionContactForMe = () => {
                     className="w-[100%] border border-[#DFE3EB] py-3 px-5 rounded"
                   />
                   {errors?.email && (
-                    <p className="text-red-600">{errors.email}</p>
+                    <p data-testId='message-error' className="text-red-600">{errors.email}</p>
                   )}
                 </div>
               </div>
@@ -110,7 +110,7 @@ export const SectionContactForMe = () => {
                 placeholder="Subjects"
               />
               {errors?.subject && (
-                <p className="text-red-600">{errors.subject}</p>
+                <p data-testId='message-error' className="text-red-600">{errors.subject}</p>
               )}
               <Field
                 id="message"
@@ -120,12 +120,13 @@ export const SectionContactForMe = () => {
                 placeholder="Message"
               ></Field>
               {errors?.message && (
-                <p className="text-red-600">{errors.message}</p>
+                <p data-testId='message-error' className="text-red-600">{errors.message}</p>
               )}
               <div className="mt-8">
-                <Anchor type="submit" variant="primary">
-                  SEND MESSAGE <img src="/icons/send.svg" alt="" />
-                </Anchor>
+                <button data-testId="button-submit" disabled={loading} className="bg-purple text-white flex max-w-fit gap-2 hover:cursor-pointer h-14 px-8 rounded font-semibold items-center" type="submit">
+                  SEND MESSAGE
+                  <img src="/icons/send.svg" alt="" />
+                </button>
               </div>
               {responseForm && responseForm.message && (
                 <p

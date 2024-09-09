@@ -1,9 +1,7 @@
 import Image from "next/image";
 import { CardProfile } from "./components/CardProfile";
 import { SectionHeader } from "../SectionHeader";
-import { ContactFormValues } from "../SectionContactForMe/validation";
-import { API_URL } from "../../../../../api/api";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import clsx from "clsx";
 import { testimonials } from "./data";
 
@@ -38,7 +36,7 @@ export const SectionTestimonial = () => {
             <img src="/image/star.png" width={20} height={20} alt="" />
             5.0 Start Rating
             </div>
-          <p className="text-2xl">"{testimonials[activeIndex]?.comment}</p>
+          <p className="text-2xl">{testimonials[activeIndex]?.comment}</p>
         </div>
         <Image
           className="-mt-6 absolute right-4 -z-10"
