@@ -20,14 +20,7 @@ describe('component SectionContactForMe', () => {
     expect(screen.getAllByText('Campo obrigatório')).toBeInTheDocument()
   })
 
+  //infelizmente esse teste eu não consegui avançar com ele, pois ele tem um grau de dificuldade maior. Precisaria de um auxílio para destravar.
+
  })
-
- it('submites the form success', () => { 
-  (fetch as any).mockResolvedValue({
-    ok: true,
-    json: () => Promise.resolve({ success: true, message: 'Contato adicionado com sucesso' }),
-  })
- })
-
-
 })
